@@ -1,25 +1,26 @@
 import logo from './logo.svg';
 import './App.css';
+import React from 'react';
+import Particles from 'react-particles-js';
+import Navigation from './components/navigation/Navigation';
+import Logo from './components/logo/Logo';
+import Banner from './components/banner/Banner';
+import ImageInput from './components/imageInput/ImageInput';
+import {particlesParams} from './particles-config';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+
+class App extends React.Component {
+  render() {
+    return(
+      <div className="App">
+        <Navigation></Navigation>
+        <Logo></Logo>
+        <Banner></Banner>
+        <ImageInput/>
+        <Particles className="background-particles" params={particlesParams}/>
+      </div>
   );
+  }
 }
 
 export default App;

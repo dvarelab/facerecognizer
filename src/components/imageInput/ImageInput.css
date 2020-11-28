@@ -1,0 +1,20 @@
+.ImageInput {
+	display: flex;
+	justify-content: center;
+}
+
+.ImageInput input {
+	padding: 0.5rem;
+}
+
+.ImageInput button {
+	padding: 0.5rem;
+	border: none;
+	outline: none;
+}
+
+.ImageInput__container {
+	padding: 1.5rem;
+	background: rgb(185,74,168);
+	background-image: linear-gradient( 109.6deg,  rgba(121,203,202,1) 11.2%, rgba(119,161,211,1) 91.1% );
+}
